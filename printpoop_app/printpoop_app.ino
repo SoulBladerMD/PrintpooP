@@ -25,7 +25,7 @@
 const String version = "1.4.6";
 const String compile_date = __DATE__ " - " __TIME__;
 
-//#define USE_TFT_28  //comment out this line to use CYD2.4"
+#define USE_TFT_28  //comment out this line to use CYD2.4"
 //-------------------------------------------------------
 
 extern "C" {
@@ -100,7 +100,7 @@ void setup() {
 
 
 #ifdef USE_TFT_28
-#define ROTATION 2
+#define ROTATION 1
 #define SDA_PIN 27
 #define SCL_PIN 22
   GAIN = 2.0;//speaker volume (recommend connect AMP IC pin 4 and 5 with R 1K ohm)
